@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title> Type Trainer </title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lumen/bootstrap.min.css" integrity="sha384-GzaBcW6yPIfhF+6VpKMjxbTx6tvR/yRd/yJub90CqoIn2Tz4rRXlSpTFYMKHCifX" crossorigin="anonymous">	
+    </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lumen/bootstrap.min.css" integrity="sha384-GzaBcW6yPIfhF+6VpKMjxbTx6tvR/yRd/yJub90CqoIn2Tz4rRXlSpTFYMKHCifX" crossorigin="anonymous">
+    <style>
+     @font-face {
+	 font-family: "GlacialIndifference";
+	 src: url("fonts/GlacialIndifference-Regular.otf");
+     }
+
+     * {
+	 font-family: "GlacialIndifference";
+     }
+
+     .error-text {
+	 color: red;
+     }
+
+     #textArea {
+	 height: 100px;
+	 background-color: #eeeeee;
+	 border-radius: 14px;
+	 caret-color: auto;
+     }
+
+     #textArea:active {
+	 border: 2px solid #aaaaaa;
+	 border-radius: 14px;
+	 border-color: white;
+     }
+
+     [contenteditable]:focus {
+	 outline: 0px solid transparent;
+     }
+    </style>    
+    <body>
+	<div class="jumbotron text-center" style="background: rgb(81,39,198); background: linear-gradient(90deg, rgba(81,39,198,1) 0%, rgba(57,196,218,1) 100%); color: white;">
+	    <h1> Welcome to Charicha Institute Typing Test</h1>
+	    <h5> Charicha Institute helps interested students to learn and use their computer skills from basic course to advance course like programming in real world. Come join us and grow. </h5>
+	</div>	
+
+	<div class="container">
+	    <div class="col"> 
+		<p id="paragraph">This is paragraph!</p>
+
+		<div class="ui">
+		    <span id="userText" style="color: green"></span><span id="errorText" style="color:red"></span>
+		</div>
+
+		<h1 id="countDown"></h1>
+
+		<!-- <div class="alert alert-danger" id="trigger"></div> -->
+		<form class="form">
+		    <div id="textArea" class="p-4" contenteditable="true"></div>
+		    <!-- <textarea id="textArea" class="form-control" rows="3" cols="1"></textarea> -->
+		</form>
+
+		<p class="alert alert-success" id="complete"></p>
+		<input type="button" class="btn btn-info" id="testAgain" value="Try Again?">
+
+	    </div>
+
+	</div>
+	<div class="jumbotron text-center mt-4" style="background: rgb(81,39,198); background: linear-gradient(90deg, rgba(81,39,198,1) 0%, rgba(57,196,218,1) 100%); color: white;">
+	    <h5> Copyrights &copy; Charicha Institute All Rights Reserved</h5>
+	</div>	    	
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+	    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	    crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</html>
